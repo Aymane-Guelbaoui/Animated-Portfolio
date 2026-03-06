@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Saira";
+  src: url("./assets/fonts/Saira-Regular.ttf") format("truetype");
+}
+
+* {
+  font-family: "Saira", sans-serif;
+}
+
+
+body[data-theme="light"] {
+  background: #efefef;
+  color: #212121;
+
+  --profile-bg: #212121;       
+  --profile-text: #ffffff;     
+  --profile-border: #ffffff;   
+  --profile-bio: #d1d1d1;  
+
+  --snowflake-color: #212121; 
+}
+
+
+body[data-theme="dark"] {
+  background: #212121;
+  color: #efefef;
+
+  --profile-bg: #ffffff;           
+  --profile-border: #212121;   
+  --profile-bio: #6c6d70;  
+  --profile-text: #212121; 
+
+  --snowflake-color: #ffffff; 
+} 
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  background: var(--snowflake-color);
+  border-radius: 50%;
+  pointer-events: none;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: inherit; 
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: inherit;
+  }
+}
