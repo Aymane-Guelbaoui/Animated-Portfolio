@@ -54,9 +54,9 @@ const ProfileCard = () => {
       </p>
 
       
-      <div className="flex justify-center gap-4 text-amber-600">
+      <div className="flex justify-center gap-4 text-amber-600 ">
       {SocialLinks.map(({ icon: Icon, href }, i) => (
-        <a key={i} href={href}>
+        <a key={i} href={href} className="transition-transform duration-200 hover:scale-115">
           <Icon size={20} />
         </a>
       ))}

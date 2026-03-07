@@ -38,7 +38,7 @@ const Footer = () => {
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}
-                    className="text-sm"
+                    className="text-sm hover:text-amber-600 transition-colors duration-200"
                     onClick={(e) => {
                       e.preventDefault();
                       document.querySelector(`#${item.toLowerCase()}`)?.scrollIntoView({ behavior: "smooth" });
@@ -62,7 +62,7 @@ const Footer = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm"
+                    className="text-sm hover:text-amber-600 transition-colors duration-200"
                   >
                     {social.name}
                   </a>

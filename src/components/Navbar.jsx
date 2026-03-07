@@ -31,7 +31,7 @@ const Navbar = ({ onMobileSidebarToggle, isMobileSidebarOpen }) => {
             className="p-3"
             title={item.label}
           >
-            <item.icon size={18} className="hover:size-5"/>
+            <item.icon size={18} className="transition-transform duration-200 hover:scale-115"/>
           </button>
         ))}
       </motion.div>

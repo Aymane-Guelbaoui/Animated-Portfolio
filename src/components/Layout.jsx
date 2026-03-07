@@ -48,7 +48,7 @@ const Layout = () => {
 
       <aside
         className={`hidden md:flex flex-col items-center justify-center
-        w-[380px] lg:w-[50%] p-6 z-20 top-0 left-0 h-screen fixed
+        w-[380px] lg:w-[40%] p-6 z-20 top-0 left-0 h-screen fixed
         transition-transform duration-300 ease-out
         ${footerVisible ? "-translate-y-70" : "translate-y-0"}`}
       >

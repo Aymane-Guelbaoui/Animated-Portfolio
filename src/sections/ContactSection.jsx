@@ -129,7 +129,7 @@ const ContactSection = () => {
         >
           {[
             { icon: Mail, label: "aymaneguelbaoui@gmail.com" },
-            { icon: Phone, label: "+212 631371921" },
+            { icon: Phone, label: "+212 631-371921" },
             { icon: MapPin, label: "Beni Mellal, MA" },
           ].map((item, i) => (
             <div key={i} className="flex items-center gap-4 text-muted-foreground">
