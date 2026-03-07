@@ -1,21 +1,47 @@
 import { motion } from "framer-motion";
 
+import Tailwind from "@/assets/img/TailwindCSS.png";
+import Laravel from "@/assets/img/Laravel.svg";
+import Supabase from "@/assets/img/Supabase.svg";
+import Canva from "@/assets/img/Canva.png";
+import Bootstrap from "@/assets/img/bootstrap.png";
+
 const stackCategories = [
   {
     title: "FRONTEND",
-    items: ["JavaScript", "React", "Next.js", "Bootstrap", "Tailwind CSS"],
+    items: [
+      { name: "JavaScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
+      { name: "React", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+      { name: "Next.js", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" },
+      { name: "Bootstrap", src: Bootstrap },
+      { name: "Tailwind CSS", src: Tailwind },
+    ],
   },
   {
     title: "BACKEND",
-    items: ["Node.js", "PHP", "Laravel"],
+    items: [
+      { name: "Node.js", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
+      { name: "PHP", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" },
+      { name: "Laravel", src: Laravel },
+    ],
   },
   {
     title: "DATABASE",
-    items: ["MySQL", "MongoDB", "Supabase"],
+    items: [
+      { name: "MySQL", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
+      { name: "MongoDB", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+      { name: "Supabase", src: Supabase },
+    ],
   },
   {
     title: "TOOLS",
-    items: ["Git","Github", "Figma","Canva", "VS Code"],
+    items: [
+      { name: "Git", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
+      { name: "GitHub", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
+      { name: "Figma", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
+      { name: "Canva", src: Canva },
+      { name: "VS Code", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" },
+    ],
   },
 ];
 
@@ -50,15 +76,19 @@ const StackSection = () => {
             <div className="flex flex-wrap gap-3">
               {category.items.map((item, i) => (
                 <motion.div
-                  key={item}
+                  key={item.name}
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: false }}
                   transition={{ duration: 0.3, delay: i * 0.05 + catIdx * 0.1 }}
-                  whileHover={{ scale: 1.05 }}
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm"
+                  whileHover={{ scale: 1.1 }}
+                  className="w-16 h-16 p-2 cursor-pointer"
                 >
-                  <span>{item}</span>
+                  <img
+                    src={item.src}
+                    alt={item.name}
+                    className="w-full h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  />
                 </motion.div>
               ))}
             </div>

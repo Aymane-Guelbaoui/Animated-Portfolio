@@ -35,12 +35,12 @@ const MobileSidebar = ({ isOpen, onClose }) => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-card border-l border-border z-[70] overflow-y-auto"
+            className="fixed top-0 right-0 h-full w-80 max-w-[85vw] border-l border-border z-[70] overflow-y-auto"
           >
             <div className="p-6">
               <button
                 onClick={onClose}
-                className="absolute top-4 right-4 p-2 rounded-full text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+                className="absolute top-4 right-4 p-2 rounded-full hover:bg-muted transition-colors cursor-pointer"
               >
                 <X size={20} />
               </button>
@@ -54,7 +54,7 @@ const MobileSidebar = ({ isOpen, onClose }) => {
                   <button
                     key={item.label}
                     onClick={() => scrollTo(item.href)}
-                    className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200 font-body"
+                    className="w-full flex items-center gap-3 px-4 py-3 rounded-lg cursor-pointer"
                   >
                     <item.icon size={18} />
                     <span>{item.label}</span>

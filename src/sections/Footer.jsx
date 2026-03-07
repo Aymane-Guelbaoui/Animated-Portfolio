@@ -81,7 +81,7 @@ const Footer = () => {
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.95 }}
               onClick={scrollToTop}
-              className="mt-6 w-12 h-12 rounded-full bg- flex items-center justify-center"
+              className="mt-6 w-12 h-12 rounded-full flex items-center justify-center cursor-pointer"
             >
               <ArrowUp size={20} />
             </motion.button>

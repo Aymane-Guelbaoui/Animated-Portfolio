@@ -44,7 +44,7 @@ const Layout = () => {
         onMobileSidebarToggle={() => setMobileSidebarOpen(!mobileSidebarOpen)}
         isMobileSidebarOpen={mobileSidebarOpen}
       />
-      <MobileSidebar isOpen={mobileSidebarOpen} onClose={() => setMobileSidebarOpen(false)} />
+      <MobileSidebar isOpen={mobileSidebarOpen} onClose={() => setMobileSidebarOpen(false)}/>
 
       <aside
         className={`hidden md:flex flex-col items-center justify-center

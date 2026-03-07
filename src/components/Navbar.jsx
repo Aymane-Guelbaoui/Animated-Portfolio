@@ -31,7 +31,7 @@ const Navbar = ({ onMobileSidebarToggle, isMobileSidebarOpen }) => {
             className="p-3"
             title={item.label}
           >
-            <item.icon size={18} className="transition-transform duration-200 hover:scale-115"/>
+            <item.icon size={18} className="transition-transform duration-200 hover:scale-115 cursor-pointer"/>
           </button>
         ))}
       </motion.div>
@@ -40,7 +40,7 @@ const Navbar = ({ onMobileSidebarToggle, isMobileSidebarOpen }) => {
         <div className="p-3 rounded-full bg-white/10 dark:bg-white/5 backdrop-blur-lg shadow-lg shadow-black/30">
         <button
           onClick={onMobileSidebarToggle}
-          className="p-3 rounded-full backdrop-blur-md d-flex shadow-lg shadow-black/30"
+          className="p-3 rounded-full backdrop-blur-md d-flex shadow-lg shadow-black/30 cursor-pointer"
         >
           
           {isMobileSidebarOpen ? <X size={20} /> : <Menu size={20} />}

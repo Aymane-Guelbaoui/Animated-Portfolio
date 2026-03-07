@@ -1,4 +1,4 @@
-import profileImg from "../assets/profile.jpeg";
+import profileImg from "../assets/img/profile.jpeg";
 import { Github, Linkedin, Instagram, Twitter } from "lucide-react";
 import { motion } from "framer-motion";
 

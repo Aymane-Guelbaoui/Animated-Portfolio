@@ -113,7 +113,7 @@ const ContactSection = () => {
             whileTap={{ scale: 0.98 }}
             type="submit"
             disabled={loading}
-            className="flex bg-amber-600 items-center gap-2 px-8 py-3 rounded-full font-medium text-sm text-white"
+            className="flex bg-amber-600 items-center gap-2 px-8 py-3 rounded-full text-sm text-white cursor-pointer"
           >
             {loading ? "Sending..." : "Send Message"} <Send size={14} />
           </motion.button>
