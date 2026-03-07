@@ -4,7 +4,7 @@ import Tailwind from "@/assets/img/TailwindCSS.png";
 import Laravel from "@/assets/img/Laravel.svg";
 import Supabase from "@/assets/img/Supabase.svg";
 import Canva from "@/assets/img/Canva.png";
-import Bootstrap from "@/assets/img/bootstrap.png";
+import Bootstrap from "@/assets/img/Bootstrap.png";
 
 const stackCategories = [
   {
