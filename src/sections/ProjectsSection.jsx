@@ -115,7 +115,15 @@ const ProjectsSection = () => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="hidden md:block fixed left-[calc(50%-350px)] lg:left-[calc(64%-400px)] top-1/2 -translate-y-1/2 z-10 "
+            className="
+hidden xl:block
+fixed
+left-[calc(40%+1rem)]
+top-1/2
+-translate-y-1/2
+z-10
+pointer-events-none
+"
           >
             <AnimatePresence mode="wait">
               <motion.span
@@ -142,7 +150,7 @@ const ProjectsSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="md:ml-auto max-w-full lg:max-w-[60%]"
+            className="md:ml-auto max-w-full xl:max-w-[60%]"
           >
             <div
               className="rounded-2xl overflow-hidden aspect-video flex items-end p-6 relative"
